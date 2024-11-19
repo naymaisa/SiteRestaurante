@@ -74,7 +74,8 @@
         </div>
     </header>
 
-    <div data-bs-spy="scroll" data-bs-target="cabecalho">
+    <!--data-bs-smooth-scroll="true": quando clicar no nav e ir para uma sessao ira aparecer o titulo da sessao e nao cortar-->
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
         <section id="sobre-o-restaurante">
             <!--data-bs-ride="carousel": faz o carrossel iniciar automaticamente quando a página for carregada, criando um efeito de transição entre os itens.-->
             <div class="carousel slide" data-bs-ride="carousel" id="carousel">
@@ -111,7 +112,7 @@
                             <img src="./images/restaurante.jpg" class="d-block w-100 rounded"
                                 alt="Foto do espaço interno do restaurante">
                         </div>
-                        <div class="col-md-7">
+                        <div class="col-md-7 mt-3 mt-md-0">
                             <h2 class="section-title">Sobre <span class="text-colored">o restaurante</span></h2>
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet optio blanditiis quam,
@@ -389,7 +390,7 @@
                     <h2 class="section-title text-center">Fale <span class="text-colored">conosco</span></h2>
                 </div>
                 <div class="row">
-                    <div class="col-md-7">
+                    <div class="col-md-7 mb-5">
                         <form>
                             <div class="mb-3">
                                 <label for="nome" class="form-label fw-bold text-colored">Seu nome</label>
