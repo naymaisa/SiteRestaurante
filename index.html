@@ -21,7 +21,7 @@
     <!--navbar-expand-lg significa que, a partir de telas grandes, a barra de navegação vai ser exibida horizontalmente com seus itens visíveis.Em telas menores, a navbar será colapsada em um botão de menu;
     sticky-top: faz com que a barra de navegaçao fique fixa no topo da página quando o usuário rolar para baixo; 
     p-4:(padding) o número 4 representa a quantidade de espaçamento-->
-    <header class="navbar navbar-expand-lg sticky-top p-4">
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
         <div class="container">
             <!--A classe navbar-brand aplica um estilo apropriado para logotipos ou nomes de marca dentro da barra de navegação, como alinhamento à esquerda e ajuste de tamanho de fonte.-->
             <!--m-0: margem de 0-->
@@ -42,14 +42,14 @@
                 <ul class="nav nav-pills d-block d-md-flex">
                     <!--fw-bold é font weigth bold, ou seja negrito-->
                     <li class="nav-item fw-bold">
-                        <a href="#" class="nav-link active">
+                        <a href="#sobre-o-restaurante" class="nav-link">
                             <!--icone de casa inicial; me-1 é de margin end, ou seja margem a direita, quanto maior o numero maior a margem-->
                             <i class="bi bi-house-door me-1"></i>
                             Sobre o restaurante
                         </a>
                     </li>
                     <li class="nav-item fw-bold">
-                        <a href="#" class="nav-link">
+                        <a href="#eventos" class="nav-link">
                             <!--icone de calendario-->
                             <i class="bi bi-calendar-check me-1"></i>
                             Eventos
@@ -74,65 +74,114 @@
         </div>
     </header>
 
-    <section id="sobre-o-restaurante">
-        <!--data-bs-ride="carousel": faz o carrossel iniciar automaticamente quando a página for carregada, criando um efeito de transição entre os itens.-->
-        <div class="carousel slide" data-bs-ride="carousel" id="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="4000">
-                    <img src="./images/slides/slide1.png" alt="Foto do espaço interno do restaurante">
+    <div data-bs-spy="scroll" data-bs-target="cabecalho">
+        <section id="sobre-o-restaurante">
+            <!--data-bs-ride="carousel": faz o carrossel iniciar automaticamente quando a página for carregada, criando um efeito de transição entre os itens.-->
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="4000">
+                        <img src="./images/slides/slide1.png" alt="Foto do espaço interno do restaurante">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <img src="./images/slides/slide2.png" alt="Duas taças de vinho">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <img src="./images/slides/slide3.png" alt="Uma mesa com comida">
+                    </div>
                 </div>
-                <div class="carousel-item" data-bs-interval="4000">
-                    <img src="./images/slides/slide2.png" alt="Duas taças de vinho">
-                </div>
-                <div class="carousel-item" data-bs-interval="4000">
-                    <img src="./images/slides/slide3.png" alt="Uma mesa com comida">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </button>
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
-                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
-                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <!--col-md-5 significa que, em telas médias (a partir de 768px de largura), o div ocupará 5/12 da linha. -->
+                        <div class="col-md-5">
+                            <!--d-block (display block) w-100(width de 100%, ou sej a img vai ocupar 100% do espaço md-5)
+                            rounded é para arrendondar a borda da imagem-->
+                            <img src="./images/restaurante.jpg" class="d-block w-100 rounded"
+                                alt="Foto do espaço interno do restaurante">
+                        </div>
+                        <div class="col-md-7">
+                            <h2 class="section-title">Sobre <span class="text-colored">o restaurante</span></h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet optio blanditiis quam,
+                                quibusdam, expedita reiciendis maxime dolorem nam deserunt sed aperiam sequi recusandae
+                                possimus ratione? Velit vel explicabo ipsum amet.
+                            </p>
+                            <h3 class="section-title">Sobre <span class="text-colored">o espaço</span></h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quas cupiditate, aut
+                                blanditiis eos magnam repellendus cum doloremque molestias sed laudantium error
+                                dignissimos
+                                voluptates impedit temporibus fugiat ea! Delectus, provident.
+                            </p>
+                            <ul>
+                                <li>Item 1</li>
+                                <li>Item 2</li>
+                                <li>Item 3</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="pt-5 pb-5">
+        </section>
+        <section id="eventos" class="pt-5 pb-5">
             <div class="container">
                 <div class="row">
-                    <!--col-md-5 significa que, em telas médias (a partir de 768px de largura), o div ocupará 5/12 da linha. -->
-                    <div class="col-md-5">
-                        <!--d-block (display block) w-100(width de 100%, ou sej a img vai ocupar 100% do espaço md-5)
-                        rounded é para arrendondar a borda da imagem-->
-                        <img src="./images/restaurante.jpg" class="d-block w-100 rounded"
-                            alt="Foto do espaço interno do restaurante">
+                    <h2 class="section-title text-center">Para todas <span class="text-colored">as ocasiões</span></h2>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <img src="./images/eventos/aniversario.jpg" alt="" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored fs-4">
+                            <!--bi bi-calendar-heart-fill: bootstrap icone de calendario com coraçao-->
+                            <i class="bi bi-calendar-heart-fill"></i>
+                            Aniversários
+                        </h3>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae culpa distinctio fuga iusto
+                            incidunt earum harum eos facilis tempore, tempora animi doloribus voluptatibus eligendi,
+                            eveniet exercitationem impedit, illo laudantium itaque?
+                        </p>
                     </div>
-                    <div class="col-md-7">
-                        <h2 class="section-title">Sobre <span>o restaurante</span></h2>
+                    <div class="col-md-4">
+                        <img src="./images/eventos/casamento.jpg" alt="" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-arrow-through-heart-fill"></i>
+                            Recepçao para casamentos
+                        </h3>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet optio blanditiis quam,
-                            quibusdam, expedita reiciendis maxime dolorem nam deserunt sed aperiam sequi recusandae
-                            possimus ratione? Velit vel explicabo ipsum amet.
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae culpa distinctio fuga iusto
+                            incidunt earum harum eos facilis tempore, tempora animi doloribus voluptatibus eligendi,
+                            eveniet exercitationem impedit, illo laudantium itaque?
                         </p>
-                        <h3 class="section-title">Sobre <span>o espaço</span></h3>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./images/eventos/confraternizacoes.jpg" alt="" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-people-fill"></i>
+                            Confraternizaçoes
+                        </h3>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quas cupiditate, aut
-                            blanditiis eos magnam repellendus cum doloremque molestias sed laudantium error dignissimos
-                            voluptates impedit temporibus fugiat ea! Delectus, provident.
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae culpa distinctio fuga iusto
+                            incidunt earum harum eos facilis tempore, tempora animi doloribus voluptatibus eligendi,
+                            eveniet exercitationem impedit, illo laudantium itaque?
                         </p>
-                        <ul>
-                            <li>Item 1</li>
-                            <li>Item 2</li>
-                            <li>Item 3</li>
-                        </ul>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
 
 
