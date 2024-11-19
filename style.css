@@ -8,15 +8,16 @@ body {
 }
 
 /* o item do menu que estiver ativo no momento*/
-.nav .nav-link.active {
+#cabecalho .nav .nav-link.active {
     background-color: #fff;
     color: #e15f41;
 }
 
 /*o escrito do nome do restaurante, bem como os outros itens do menu de navegaçao*/
-.nav .nav-link,
+#cabecalho .nav .nav-link,
 .navbar-brand,
-.navbar-brand:hover {
+.navbar-brand:hover,
+.nav-cardapio .nav-link.active:hover {
     color: #fff;
 }
 
@@ -34,5 +35,15 @@ body {
 }
 
 .text-colored {
+    color: #e15f41;
+}
+
+/*.nav-cardapio .nav-link.active é para estilizar apenas o item ativo do cardapìo*/
+.nav-cardapio .nav-link.active {
+    background-color: #e15f41;
+    color: #fff;
+}
+
+.nav-cardapio .nav-link:hover {
     color: #e15f41;
 }
