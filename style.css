@@ -1,0 +1,25 @@
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+/*barra de navegaçao inicial*/
+.navbar {
+    background-color: #e15f41;
+}
+
+/* o item do menu que estiver ativo no momento*/
+.nav .nav-link.active {
+    background-color: #fff;
+    color: #e15f41;
+}
+
+/*o escrito do nome do restaurante, bem como os outros itens do menu de navegaçao*/
+.nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover {
+    color: #fff;
+}
+
+.navbar-brand {
+    font-family: "Pacifico", cursive;
+}
