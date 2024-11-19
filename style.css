@@ -30,7 +30,8 @@ body {
     font-family: "Pacifico", cursive;
 }
 
-#sobre-o-restaurante {
+#sobre-o-restaurante,
+#cardapio {
     background-color: #ffeae6;
 }
 
