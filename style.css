@@ -40,11 +40,21 @@ body {
 }
 
 /*.nav-cardapio .nav-link.active é para estilizar apenas o item ativo do cardapìo*/
-.nav-cardapio .nav-link.active {
+.nav-cardapio .nav-link.active,
+#fale-conosco button {
     background-color: #e15f41;
     color: #fff;
 }
 
 .nav-cardapio .nav-link:hover {
     color: #e15f41;
+}
+
+.social-links li {
+    list-style: none;
+    display: inline;
+}
+
+.social-links a {
+    text-decoration: none;
 }
